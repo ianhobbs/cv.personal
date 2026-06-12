@@ -46,7 +46,6 @@ export function generatePersonStructuredData() {
         name: "Professional software engineer",
       },
     })),
-    knowsAbout: RESUME_DATA.skills,
   };
 }
 

@@ -125,6 +125,9 @@ export function Projects({ projects }: ProjectsProps) {
       <h2 className="text-xl font-bold" id="side-projects">
         Side projects
       </h2>
+      <p className="text-sm text-foreground/60">
+        projects, collaborations, research
+      </p>
       <div
         className="-mx-3 grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 print:grid-cols-3 print:gap-2"
         role="feed"
