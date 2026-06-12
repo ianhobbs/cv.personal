@@ -1,7 +1,7 @@
 import { Section } from "../../components/ui/section";
 
 interface AboutProps {
-  summary: string;
+  summary: string[];
   className?: string;
 }
 
