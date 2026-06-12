@@ -85,5 +85,34 @@ docker compose down      # stop the container
 ```
 
 ## license
-
 MIT
+
+
+# Updating.
+
+The setup you want is:
+
+upstream → the original developer's repo (to pull their updates)
+origin → your own private repo (to push your work)
+Here's what to do:
+
+Step 1 — Rename the current remote to upstream:
+
+
+git remote rename origin upstream
+Step 2 — Create a new private repo on GitHub (go to github.com → New repository → set it Private).
+
+Step 3 — Add your private repo as origin:
+
+
+git remote add origin git@github.com:YOUR_USERNAME/YOUR_REPO_NAME.git
+Step 4 — Push to your private repo:
+
+
+git push -u origin main
+When you want to pull the developer's updates in the future:
+
+
+git fetch upstream
+git merge upstream/main
+git push origin main

@@ -1,7 +1,7 @@
 import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import type React from "react";
 import { Avatar } from "@/components/avatar";
-import { GitHubIcon, LinkedInIcon } from "@/components/icons";
+import { GitHubIcon, InstagramIcon, LinkedInIcon } from "@/components/icons";
 import { XIcon } from "@/components/icons/x-icon";
 import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
@@ -13,6 +13,7 @@ const ICON_MAP: Record<
   React.ComponentType<React.SVGProps<SVGSVGElement>>
 > = {
   github: GitHubIcon,
+  instagram: InstagramIcon,
   linkedin: LinkedInIcon,
   x: XIcon,
   globe: GlobeIcon,

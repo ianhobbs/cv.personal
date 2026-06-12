@@ -7,36 +7,32 @@ export const RESUME_DATA: ResumeData = {
   locationLink: "https://www.google.com/maps/place/Wrocław",
   about: "Full Stack Engineer building products from the ground up.",
   summary:
-    "Full Stack Engineer with 15+ years of experience and 10+ years working remotely. Building high-performance web applications, leading distributed teams, and creating open source tools used by thousands of developers.",
+    "Interested in experimental forms of photography using a post-photography approach to themes of observation and technological vistas.",
   avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
   personalWebsiteUrl: "https://jarocki.me",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "ian@ianhobbs.net",
+     tel: "+61411032601",
     social: [
       {
-        name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
-        icon: "github",
-      },
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
-        icon: "linkedin",
-      },
-      {
-        name: "X",
-        url: "https://x.com/BartoszJarocki",
-        icon: "x",
-      },
+        name: "Instagram",
+        url: "https://www.instagram.com/ianhobbs_media/",
+        icon: "instagram",
+      }
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "University of Sydney, Sydney College of Art",
+      degree: "BA(Hons) Major in Photomedia / Electronic Media",
+      start: "1998",
+      end: "1999",
+    },
+    {
+      school: "University of NSW",
+      degree: "Bachelor's Degree in Fine Art, Major in Photomedia",
+      start: "1980",
+      end: "1985",
     },
   ],
   work: [
