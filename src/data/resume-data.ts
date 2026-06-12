@@ -84,13 +84,13 @@ export const RESUME_DATA: ResumeData = {
       },
     },
     {
-      title: "Minimalist CV",
-      techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
+      title: "A Thousand Words",
+      techStack: ["Video", "Website", "Exhibition", "Commission"],
       description:
-        "Open source, print-friendly CV template. 9,600+ stars on GitHub",
+        "Comissioned by the Museum of Sydney, 'A Thousand Words' is a video work that explores the relationship between language and image. The work was exhibited at the Museum of Sydney in 2020.",
       link: {
-        label: "Minimalist CV",
-        href: "https://github.com/BartoszJarocki/cv",
+        label: "A Thousand Words",
+        href: "https://atwonline.com.au/",
       },
     },
   ],
@@ -101,8 +101,6 @@ export const RESUME_DATA: ResumeData = {
       year: "2022",
     },
     { title: "Nano Black", venue: "Browser Plugin / GitHub", year: "2022" },
-    { title: "Clean it Up", venue: "Bundanon Residency, NSW", year: "2020" },
-    { title: "Fireweed", venue: "Music Video", year: "2020" },
     { title: "A Thousand Words", venue: "Sydney Museum", year: "2020" },
     { title: "Voices Within", venue: "Green Square, NSW", year: "2019" },
     { title: "Operation Crayweed", venue: "StudioTCS", year: "2017" },
