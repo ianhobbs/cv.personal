@@ -16,8 +16,8 @@ export function Summary({ summary, className }: AboutProps) {
         About
       </h2>
       <div className="space-y-3 font-mono text-sm text-foreground/80 print:text-[12px]">
-        {summary.map((paragraph, i) => (
-          <p key={i} className="text-pretty">
+        {summary.map((paragraph) => (
+          <p key={paragraph.slice(0, 32)} className="text-pretty">
             {paragraph}
           </p>
         ))}

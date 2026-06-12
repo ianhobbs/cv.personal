@@ -13,20 +13,19 @@ export function Awards({ awards }: AwardsListProps) {
       <h2 className="text-xl font-bold" id="awards-section">
         Awards
       </h2>
-      <div className="space-y-2" role="list" aria-labelledby="awards-section">
+      <ul className="space-y-2" aria-labelledby="awards-section">
         {awards.map((item) => (
-          <div
+          <li
             key={`${item.award}-${item.year}`}
-            role="listitem"
             className="flex items-baseline justify-between gap-x-4 text-sm"
           >
             <span className="text-foreground/80">{item.award}</span>
             <span className="shrink-0 tabular-nums text-gray-500">
               {item.year}
             </span>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </Section>
   );
 }
