@@ -1,15 +1,15 @@
 import type { ResumeData } from "@/lib/types";
 
 export const RESUME_DATA: ResumeData = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
-  about: "Full Stack Engineer building products from the ground up.",
+  name: "Ian Hobbs",
+  initials: "IH",
+  location: "Sydney, Australia",
+  locationLink: "https://www.google.com/maps/place/Sydney",
+  about: "Media Artist, Photographer, and Software Engineer",
   summary:
     "Interested in experimental forms of photography using a post-photography approach to themes of observation and technological vistas.",
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+  avatarUrl: "https://avatars.githubusercontent.com/u/583231?v=4",
+  personalWebsiteUrl: "https://ianhobbs.net",
   contact: {
     email: "ian@ianhobbs.net",
      tel: "+61411032601",
@@ -33,6 +33,28 @@ export const RESUME_DATA: ResumeData = {
       degree: "Bachelor's Degree in Fine Art, Major in Photomedia",
       start: "1980",
       end: "1985",
+    },
+  ],
+    awards: [
+    {
+      award: "Recipient of Premiers Department Grant with Penrith Regional Gallery",
+      year: "2003",
+    },
+    {
+      award: "Recipient of New Media Grant for Interactive Works, Australia Council.",
+      year: "1999",
+    },
+    {
+      award: "The Art Directors Club, New York, NY 75th Awards, 'Merit Award for Editorial Publications' for Object Magazine, Craft Council of NSW.",
+      year: "1996",
+    },
+    {
+      award: "National Gallery of Australia Collection. 'Sea Shell Headset' Joyce Hinterding & Ian Hobbs",
+      year: "1988",
+    },
+    {
+      award: "National Gallery of Australia Collection. Poster, 'May 1st Club - Smash Capital'.",
+      year: "1983",
     },
   ],
   work: [
@@ -122,19 +144,6 @@ export const RESUME_DATA: ResumeData = {
       description:
         "Developed software for LTE base stations at enterprise scale. Built strong foundations in software architecture, testing practices, and cross-team collaboration.",
     },
-  ],
-  skills: [
-    "React/Next.js",
-    "TypeScript",
-    "Node.js",
-    "AI/LLMs",
-    "Tailwind CSS",
-    "Design Systems",
-    "WebRTC",
-    "WebSockets",
-    "GraphQL",
-    "System Architecture",
-    "Remote Team Leadership",
   ],
   projects: [
     {

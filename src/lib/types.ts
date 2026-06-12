@@ -40,7 +40,6 @@ export interface ResumeData {
     description: string;
     highlights?: readonly string[];
   }>;
-  skills: string[];
   projects: Array<{
     title: string;
     techStack: string[];
@@ -49,5 +48,9 @@ export interface ResumeData {
       label: string;
       href: string;
     };
+  }>;
+  awards: Array<{
+    award: string;
+    year: string;
   }>;
 }

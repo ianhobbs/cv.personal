@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { CommandMenu } from "@/components/command-menu";
 import { RESUME_DATA } from "@/data/resume-data";
 import { generateResumeStructuredData } from "@/lib/structured-data";
+import { Awards } from "./components/awards";
 import { Education } from "./components/education";
 import { Header } from "./components/header";
 import { Projects } from "./components/projects";
-import { Skills } from "./components/skills";
 import { Summary } from "./components/summary";
 import { WorkExperience } from "./components/work-experience";
 
@@ -104,13 +104,13 @@ export default function ResumePage() {
               className="animate-fade-in"
               style={{ animationDelay: "300ms" }}
             >
-              <Skills skills={RESUME_DATA.skills} />
+              <Projects projects={RESUME_DATA.projects} />
             </div>
             <div
               className="animate-fade-in"
-              style={{ animationDelay: "375ms" }}
+              style={{ animationDelay: "450ms" }}
             >
-              <Projects projects={RESUME_DATA.projects} />
+              <Awards awards={RESUME_DATA.awards} />
             </div>
           </div>
         </section>
