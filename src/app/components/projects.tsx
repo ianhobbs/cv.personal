@@ -123,7 +123,7 @@ export function Projects({ projects }: ProjectsProps) {
   return (
     <Section className="scroll-mb-16 print:space-y-4">
       <h2 className="text-xl font-bold" id="side-projects">
-        Side projects
+        Projects
       </h2>
       <p className="text-sm text-foreground/60">
         projects, collaborations, research

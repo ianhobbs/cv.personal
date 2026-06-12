@@ -15,8 +15,12 @@ export function Summary({ summary, className }: AboutProps) {
       <h2 className="text-xl font-bold" id="about-section">
         About
       </h2>
-      <div className="text-pretty font-mono text-sm text-foreground/80 print:text-[12px]">
-        {summary}
+      <div className="space-y-3 font-mono text-sm text-foreground/80 print:text-[12px]">
+        {summary.map((paragraph, i) => (
+          <p key={i} className="text-pretty">
+            {paragraph}
+          </p>
+        ))}
       </div>
     </Section>
   );

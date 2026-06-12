@@ -3,11 +3,11 @@ import { CommandMenu } from "@/components/command-menu";
 import { RESUME_DATA } from "@/data/resume-data";
 import { generateResumeStructuredData } from "@/lib/structured-data";
 import { Awards } from "./components/awards";
+import { Exhibitions } from "./components/exhibitions";
 import { Education } from "./components/education";
 import { Header } from "./components/header";
 import { Projects } from "./components/projects";
 import { Summary } from "./components/summary";
-import { WorkExperience } from "./components/work-experience";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} - Resume`,
@@ -90,12 +90,6 @@ export default function ResumePage() {
             </div>
             <div
               className="animate-fade-in"
-              style={{ animationDelay: "150ms" }}
-            >
-              <WorkExperience work={RESUME_DATA.work} />
-            </div>
-            <div
-              className="animate-fade-in"
               style={{ animationDelay: "225ms" }}
             >
               <Education education={RESUME_DATA.education} />
@@ -109,6 +103,12 @@ export default function ResumePage() {
             <div
               className="animate-fade-in"
               style={{ animationDelay: "450ms" }}
+            >
+              <Exhibitions exhibitions={RESUME_DATA.exhibitions} />
+            </div>
+            <div
+              className="animate-fade-in"
+              style={{ animationDelay: "525ms" }}
             >
               <Awards awards={RESUME_DATA.awards} />
             </div>

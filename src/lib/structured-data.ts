@@ -20,31 +20,9 @@ export function generatePersonStructuredData() {
       telephone: RESUME_DATA.contact.tel,
       contactType: "personal",
     },
-    jobTitle: "Full Stack Engineer",
-    worksFor:
-      RESUME_DATA.work.length > 0
-        ? {
-            "@type": "Organization",
-            name: RESUME_DATA.work[0].company,
-            url: RESUME_DATA.work[0].link,
-          }
-        : undefined,
     alumniOf: RESUME_DATA.education.map((edu) => ({
       "@type": "EducationalOrganization",
       name: edu.school,
-    })),
-    hasOccupation: RESUME_DATA.work.map((job) => ({
-      "@type": "Occupation",
-      name: job.title,
-      occupationLocation: {
-        "@type": "Place",
-        name: RESUME_DATA.location,
-      },
-      occupationalCategory: "Software Engineering",
-      estimatedSalary: {
-        "@type": "MonetaryAmountDistribution",
-        name: "Professional software engineer",
-      },
     })),
   };
 }

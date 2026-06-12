@@ -12,7 +12,7 @@ export interface ResumeData {
   location: string;
   locationLink: string;
   about: string;
-  summary: string;
+  summary: string[];
   avatarUrl: string;
   personalWebsiteUrl: string;
   contact: {
@@ -30,16 +30,6 @@ export interface ResumeData {
     start: string;
     end: string;
   }>;
-  work: Array<{
-    company: string;
-    link: string;
-    badges: string[];
-    title: string;
-    start: string;
-    end: string | null;
-    description: string;
-    highlights?: readonly string[];
-  }>;
   projects: Array<{
     title: string;
     techStack: string[];
@@ -51,6 +41,11 @@ export interface ResumeData {
   }>;
   awards: Array<{
     award: string;
+    year: string;
+  }>;
+  exhibitions: Array<{
+    title: string;
+    venue: string;
     year: string;
   }>;
 }
