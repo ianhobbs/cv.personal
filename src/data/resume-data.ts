@@ -83,9 +83,39 @@ export const RESUME_DATA: ResumeData = {
       techStack: ["Video", "Website", "Exhibition", "Commission"],
       description:
         "Commissioned by the Museum of Sydney, 'A Thousand Words' is a video work that explores the relationship between language and image. The work was exhibited at the Museum of Sydney in 2020.",
+      link: { label: "A Thousand Words", href: "https://atwonline.com.au/" },
+    },
+    {
+      title: "Voices Within",
+      year: "2019",
+      techStack: ["Video", "Motion Graphics", "Coding", "Commission"],
+      description:
+        "Working with Robyn Backen,'Voices Within' is a video work which wraps the Uno Building, Green Square, Sydney. Commissioned by the City of Sydney.",
       link: {
-        label: "A Thousand Words",
-        href: "https://atwonline.com.au/",
+        label: "Voices Within",
+        href: "https://ianhobbsmedia.com.au/uno",
+      },
+    },
+    {
+      title: "Thought Train",
+      year: "2018",
+      techStack: ["Video", "Motion Graphics", "Coding", "Commission"],
+      description:
+        "Working with Robyn Backen,'Thought Train' is a video work for Wynscreen, Wynyard. Commissioned by the TransportNSW.",
+      link: {
+        label: "Thought Train",
+        href: "https://ianhobbsmedia.com.au/thought-train",
+      },
+    },
+    {
+      title: "Nano Black",
+      year: "2019",
+      techStack: ["Browser Plugin", "Html", "CSS", "javascript"],
+      description:
+        "Nano Black is a browser plugin that turns all images black. There are too many pictures in the world. The plugin is available on GitHub.",
+      link: {
+        label: "Nano Black on GitHub",
+        href: "https://github.com/ianhobbs/nano-black",
       },
     },
   ],
@@ -95,15 +125,8 @@ export const RESUME_DATA: ResumeData = {
       venue: "Grace Cossington Smith Gallery",
       year: "2022",
     },
-    { title: "Nano Black", venue: "Browser Plugin / GitHub", year: "2022" },
     { title: "A Thousand Words", venue: "Sydney Museum", year: "2020" },
-    { title: "Voices Within", venue: "Green Square, NSW", year: "2019" },
-    { title: "Waterfall", venue: "StudioTCS", year: "2018" },
-    { title: "Human", venue: "UNSW Architecture", year: "2018" },
-    { title: "Swing", venue: "StudioTCS", year: "2018" },
     { title: "Thought Train", venue: "Wynscreen, Sydney", year: "2018" },
-    { title: "Operation Crayweed", venue: "StudioTCS", year: "2017" },
-    { title: "Making Halo", venue: "Frasers Setsui / Partridge", year: "2012" },
     { title: "Last Word", venue: "Bundanon Trust, Nowra NSW", year: "2012" },
     {
       title: "Honouring Names Tent Embassy",
@@ -113,16 +136,6 @@ export const RESUME_DATA: ResumeData = {
     { title: "ACPET 25 Years", venue: "Documentary", year: "2012" },
     { title: "Days", venue: "Lismore Regional Gallery, NSW", year: "2011" },
     { title: "Last Word", venue: "Bundanon Trust, Nowra NSW", year: "2011" },
-    {
-      title: "Liz Williamson: Textiles",
-      venue: "Craft Council NSW",
-      year: "2009",
-    },
-    {
-      title: "Matthew and Others",
-      venue: "Campbelltown Art Centre",
-      year: "2006",
-    },
     {
       title: "Welcome to my Loungeroom",
       venue: "Penrith and Lewers Bequest Regional Gallery",
@@ -178,10 +191,24 @@ export const RESUME_DATA: ResumeData = {
       year: "2016",
     },
     {
+      title: "Liz Williamson: Textiles",
+      publisher: "Craft Council NSW",
+      year: "2009",
+    },
+    {
+      title: "Matthew and Others",
+      publisher: "Campbelltown Art Centre",
+      year: "2006",
+    },
+    {
       publisher: "Casula Powerhouse",
       title: "Ali or 3li",
       year: "2005",
     },
-    { title: "Latitudes", publisher: "ANU Canberra School of Art", year: "1998" },
+    {
+      title: "Latitudes",
+      publisher: "ANU Canberra School of Art",
+      year: "1998",
+    },
   ],
 } as const;
