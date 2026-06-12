@@ -10,7 +10,7 @@ export const RESUME_DATA: ResumeData = {
     'Interested in experimental forms of photography using a post-photography approach to themes of observation and technological vistas. Ian Hobbs is a highly respected Artist and media maker. He works in photography, motion graphics and websites. He transforms conceptual thought and abstract ideas into clear, elegant media outcomes. He has developed and taught undergraduate courses in New Media, Design and Photography. Institutions include; Sydney University, University of Western Sydney and Uni of Newcastle. He is currently working as Ian Hobbs Media. "A creative consultancy for media production. My happy place is between images and code. My work often sits between spaces. Between design and art. Between you and me. Communicating an idea fit for a purpose".',
     "'My process might begin with meeting a need to visualise or communicate and idea, a thing, a space. It can be a kind of struggle to negotiating with the terrain you find yourself in. The resulting output can be a kind of romance of the highest vision of the idea. The best work changes me.'",
   ],
-  avatarUrl: "https://avatars.githubusercontent.com/u/583231?v=4",
+  avatarUrl: "https://avatars.githubusercontent.com/u/1614350?v=4",
   personalWebsiteUrl: "https://ianhobbs.net",
   contact: {
     email: "ian@ianhobbs.net",
@@ -53,31 +53,25 @@ export const RESUME_DATA: ResumeData = {
         "The Art Directors Club, New York, NY 75th Awards, 'Merit Award for Editorial Publications' for Object Magazine, Craft Council of NSW.",
       year: "1996",
     },
-    {
-      award:
-        "National Gallery of Australia Collection. 'Sea Shell Headset' Joyce Hinterding & Ian Hobbs",
-      year: "1988",
-    },
-    {
-      award:
-        "National Gallery of Australia Collection. Poster, 'May 1st Club - Smash Capital'.",
-      year: "1983",
-    },
   ],
   projects: [
     {
       title: "Sea Kin",
+      year: "2026",
       techStack: ["Photography", "Collaboration"],
-      description: "A collaboration with Jennifer Turpin and Sophie Callet.",
+      description:
+        "A collaboration with Jennifer Turpin and Sophie Raymond. Producing large scale portraits of sea creatures for the Sea Kin exhibition at the Australian National Maritime Museum.",
       link: {
-        label: "Australian National Maratime Museum",
+        label: "Australian National Maritime Museum",
         href: "https://www.sea.museum/en/whats-on/exhibitions/sea-kin",
       },
     },
     {
       title: "Clean it Up",
+      year: "2020",
       techStack: ["Residency", "Video", "Research"],
-      description: "A residency with Robyn Backen working with the Bundanon Trust to research the Clean-it-UP concepts with Daniel Peltz and Sissi Westerberg , Sweden.",
+      description:
+        "A residency with Robyn Backen working with the Bundanon Trust to research the Clean-it-UP concepts with Daniel Peltz and Sissi Westerberg, Sweden.",
       link: {
         label: "Clean it UP",
         href: "https://ianhobbs.net/works/fireweed",
@@ -85,9 +79,10 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       title: "A Thousand Words",
+      year: "2020",
       techStack: ["Video", "Website", "Exhibition", "Commission"],
       description:
-        "Comissioned by the Museum of Sydney, 'A Thousand Words' is a video work that explores the relationship between language and image. The work was exhibited at the Museum of Sydney in 2020.",
+        "Commissioned by the Museum of Sydney, 'A Thousand Words' is a video work that explores the relationship between language and image. The work was exhibited at the Museum of Sydney in 2020.",
       link: {
         label: "A Thousand Words",
         href: "https://atwonline.com.au/",
@@ -103,16 +98,11 @@ export const RESUME_DATA: ResumeData = {
     { title: "Nano Black", venue: "Browser Plugin / GitHub", year: "2022" },
     { title: "A Thousand Words", venue: "Sydney Museum", year: "2020" },
     { title: "Voices Within", venue: "Green Square, NSW", year: "2019" },
-    { title: "Operation Crayweed", venue: "StudioTCS", year: "2017" },
     { title: "Waterfall", venue: "StudioTCS", year: "2018" },
     { title: "Human", venue: "UNSW Architecture", year: "2018" },
     { title: "Swing", venue: "StudioTCS", year: "2018" },
     { title: "Thought Train", venue: "Wynscreen, Sydney", year: "2018" },
-    {
-      title: "Chester Nealie Etched in Fire",
-      venue: "Ron Sang Publications, NZ",
-      year: "2016",
-    },
+    { title: "Operation Crayweed", venue: "StudioTCS", year: "2017" },
     { title: "Making Halo", venue: "Frasers Setsui / Partridge", year: "2012" },
     { title: "Last Word", venue: "Bundanon Trust, Nowra NSW", year: "2012" },
     {
@@ -133,7 +123,6 @@ export const RESUME_DATA: ResumeData = {
       venue: "Campbelltown Art Centre",
       year: "2006",
     },
-    { title: "Ali or 3li", venue: "Casula Powerhouse", year: "2005" },
     {
       title: "Welcome to my Loungeroom",
       venue: "Penrith and Lewers Bequest Regional Gallery",
@@ -147,7 +136,6 @@ export const RESUME_DATA: ResumeData = {
     },
     { title: "Degree Show", venue: "Sydney College of the Arts", year: "1999" },
     { title: "Morse Code", venue: "Art Space Wooloomooloo", year: "1998" },
-    { title: "Latitudes", venue: "ANU Canberra School of Art", year: "1998" },
     { title: "Circus Circus", venue: "Hellfire Club, Sydney", year: "1997" },
     {
       title: "Luminous Insects",
@@ -170,5 +158,30 @@ export const RESUME_DATA: ResumeData = {
       year: "1988",
     },
     { title: "Twelve", venue: "First Draft Gallery, Sydney", year: "1987" },
+  ],
+  collections: [
+    {
+      institution: "National Gallery of Australia Collection",
+      year: "1988",
+      item: "Sea Shell Headset. Joyce Hinterding & Ian Hobbs",
+    },
+    {
+      institution: "National Gallery of Australia Collection",
+      year: "1983",
+      item: "Poster, May 1st Club - Smash Capital",
+    },
+  ],
+  publications: [
+    {
+      publisher: "Ron Sang Publications, NZ",
+      title: "Chester Nealie Etched in Fire",
+      year: "2016",
+    },
+    {
+      publisher: "Casula Powerhouse",
+      title: "Ali or 3li",
+      year: "2005",
+    },
+    { title: "Latitudes", publisher: "ANU Canberra School of Art", year: "1998" },
   ],
 } as const;

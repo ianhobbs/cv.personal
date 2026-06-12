@@ -39,6 +39,7 @@ export interface ResumeData {
   }>;
   projects: Array<{
     title: string;
+    year: string;
     techStack: string[];
     description: string;
     link?: {
@@ -53,6 +54,16 @@ export interface ResumeData {
   exhibitions: Array<{
     title: string;
     venue: string;
+    year: string;
+  }>;
+  collections: Array<{
+    institution: string;
+    year: string;
+    item: string;
+  }>;
+  publications: Array<{
+    publisher: string;
+    title: string;
     year: string;
   }>;
 }

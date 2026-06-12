@@ -3,10 +3,12 @@ import { CommandMenu } from "@/components/command-menu";
 import { RESUME_DATA } from "@/data/resume-data";
 import { generateResumeStructuredData } from "@/lib/structured-data";
 import { Awards } from "./components/awards";
+import { Collections } from "./components/collections";
 import { Education } from "./components/education";
 import { Exhibitions } from "./components/exhibitions";
 import { Header } from "./components/header";
 import { Projects } from "./components/projects";
+import { Publications } from "./components/publications";
 import { Summary } from "./components/summary";
 
 export const metadata: Metadata = {
@@ -19,7 +21,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://cv.jarocki.me/opengraph-image",
+        url: "https://bio.ianhobbs.net/opengraph-image",
         width: 1200,
         height: 630,
         alt: `${RESUME_DATA.name}'s profile picture`,
@@ -30,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${RESUME_DATA.name} - Resume`,
     description: RESUME_DATA.about,
-    images: ["https://cv.jarocki.me/opengraph-image"],
+    images: ["https://bio.ianhobbs.net/opengraph-image"],
   },
 };
 
@@ -109,6 +111,18 @@ export default function ResumePage() {
             <div
               className="animate-fade-in"
               style={{ animationDelay: "525ms" }}
+            >
+              <Collections collections={RESUME_DATA.collections} />
+            </div>
+            <div
+              className="animate-fade-in"
+              style={{ animationDelay: "600ms" }}
+            >
+              <Publications publications={RESUME_DATA.publications} />
+            </div>
+            <div
+              className="animate-fade-in"
+              style={{ animationDelay: "675ms" }}
             >
               <Awards awards={RESUME_DATA.awards} />
             </div>

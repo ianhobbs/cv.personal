@@ -81,6 +81,7 @@ function ProjectTags({ tags }: ProjectTagsProps) {
 
 interface ProjectCardProps {
   title: string;
+  year: string;
   description: string;
   tags: ProjectTags;
   link?: string;
@@ -89,13 +90,22 @@ interface ProjectCardProps {
 /**
  * Card component displaying project information
  */
-function ProjectCard({ title, description, tags, link }: ProjectCardProps) {
+function ProjectCard({
+  title,
+  year,
+  description,
+  tags,
+  link,
+}: ProjectCardProps) {
   return (
     <Card className="flex h-full flex-col overflow-hidden border p-3">
       <CardHeader>
         <div className="space-y-1">
-          <CardTitle className="text-base">
+          <CardTitle className="flex items-center justify-between gap-x-2 text-base">
             <ProjectLink title={title} link={link} />
+            <span className="shrink-0 font-mono text-xs tabular-nums text-foreground/60 print:text-[10px]">
+              {year}
+            </span>
           </CardTitle>
           <CardDescription
             className="text-pretty font-mono text-xs print:text-[10px]"
@@ -140,6 +150,7 @@ export function Projects({ projects }: ProjectsProps) {
           >
             <ProjectCard
               title={project.title}
+              year={project.year}
               description={project.description}
               tags={project.techStack}
               link={project.link?.href}
